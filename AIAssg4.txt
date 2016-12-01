@@ -1,0 +1,36 @@
+				 CSCI 4391/5931
+				Assignment 4
+
+In this assignment you are to implement and test two Lisp functions. The first
+of which is a modification to a function that you have already seen:
+
+Function 1:
+Modify the drop-value function to be able to drop a value from any given list
+no matter how deep the value is in the list. You can call the function 
+drop-all.
+
+For example: 
+
+(drop-all 'a '(1 2 a b 3 a c d a 8)) should result in
+(1 2 b 3 c d 8)
+
+(drop-all 'a '(1 2 (a b c (a d (f a))) x (a y) w a 3 5 a )) should result in
+(1 2 (b c (d (f))) x (y) w 3 5)
+
+
+Function 2: 
+Implement a function that finds the numbers in a list no matter how deep 
+they are in the list.
+
+For example:
+
+(find-nums '(a b 2 4 d 8 c 3 w w w 5)) should result in
+(2 4 8 3 5)
+
+(find-nums '(1 2 (3 a b) (w 3 4 (7 9 d) b) 5 a b )) should result in
+(1 2 3 3 4 7 9 5)
+
+Place both functions in one Lisp file (assignment4.lsp) and submit via 
+Blackboard.
+
+Good Luck
